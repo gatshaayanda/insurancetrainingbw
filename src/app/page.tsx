@@ -34,7 +34,7 @@ export default function HomePage() {
       {/* Hero */}
       <section
         {...longPress}
-        className="text-center px-6 pt-28 pb-20 bg-gradient-to-br from-[#3A8DDB] to-[#0F264B] text-white"
+        className="text-center px-6 pt-28 pb-20 bg-gradient-to-br from-[#3A8DDB] to-[#98bfff] text-white"
       >
         <h1 className="text-4xl sm:text-5xl font-bold leading-tight max-w-2xl mx-auto mb-4 drop-shadow-lg">
           The World Needs Insurers — Train With Us Today
