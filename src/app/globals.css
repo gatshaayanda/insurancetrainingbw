@@ -1,24 +1,20 @@
-/* src/app/globals.css */
-
-/* 1. Tailwind base import */
 @import "tailwindcss";
 
-/* 2. CSS Variables */
 :root {
-  --background: #FFFDF6; /* Warm Shell */
-  --foreground: #0F264B; /* Deep Navy */
+  --background: #ffffff;
+  --foreground: #0F264B;
+
   --background-dark: #0A0A0A;
   --foreground-dark: #F3F4F6;
 
-  --brand-primary: #0F264B; /* Navy */
-  --brand-secondary: #C9A43E; /* Precision Gold */
-  --brand-accent: #D9DCE2; /* Cloud Silver */
+  --brand-primary: #0F264B;       /* Navy */
+  --brand-secondary: #3A8DDB;     /* Bright Blue */
+  --brand-accent: #D9DCE2;        /* Soft Gray */
 
   --font-sans: var(--font-geist-sans), sans-serif;
   --font-mono: var(--font-geist-mono), monospace;
 }
 
-/* 3. Dark Mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: var(--background-dark);
@@ -26,19 +22,17 @@
   }
 }
 
-/* 4. Reset & Base Styles */
 body {
   margin: 0;
   padding: 0;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
-  line-height: 1.75;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 5. Containers */
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -51,7 +45,6 @@ body {
   .container { padding: 0 0.75rem; }
 }
 
-/* 6. Typography */
 a {
   color: var(--brand-secondary);
   text-decoration: none;
@@ -68,7 +61,6 @@ h1,h2,h3,h4,h5,h6 {
   margin-top: 1rem;
 }
 
-/* 7. Buttons */
 button {
   font-family: var(--font-sans);
   cursor: pointer;
@@ -85,7 +77,6 @@ button:hover {
   color: var(--foreground);
 }
 
-/* 8. Form Elements */
 input, textarea, select {
   font-family: var(--font-sans);
   border: 1px solid #ccc;
@@ -98,15 +89,13 @@ input, textarea, select {
 input:focus, textarea:focus, select:focus {
   outline: none;
   border-color: var(--brand-secondary);
-  box-shadow: 0 0 0 2px rgba(201,164,62,0.3);
+  box-shadow: 0 0 0 2px rgba(58, 141, 219, 0.3);
 }
 
-/* 9. Sections */
 section {
   padding: 4rem 0;
 }
 
-/* 10. Footer */
 footer {
   background: var(--brand-accent);
   color: var(--brand-primary);
@@ -114,12 +103,11 @@ footer {
   text-align: center;
 }
 
-/* 11. Utility Classes */
 .btn-navy {
   @apply inline-flex items-center gap-2 bg-[#0F264B] text-white px-4 py-2 rounded shadow hover:bg-[#1a3866] transition;
 }
-.btn-gold {
-  @apply inline-flex items-center gap-2 bg-[#C9A43E] text-[#0F264B] px-4 py-2 rounded shadow hover:brightness-110 transition;
+.btn-blue {
+  @apply inline-flex items-center gap-2 bg-[#3A8DDB] text-white px-4 py-2 rounded shadow hover:brightness-110 transition;
 }
 .card {
   @apply bg-white border border-gray-100 rounded-xl p-6 shadow-sm;

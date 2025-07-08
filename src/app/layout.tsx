@@ -1,4 +1,3 @@
-// src/app/layout.tsx
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
@@ -13,9 +12,9 @@ const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] });
 const geistMono = Geist_Mono({ variable: '--font-geist-mono', subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'AdminHub',
+  title: 'Insurance Training BW',
   description:
-    'Powerful websites. Built fast. Guided by experience. A boutique partner delivering scalable Next.js & Firebase platforms.',
+    'Accredited insurance education provider in Botswana. Courses, self-study, tuition, and chatbot assistance for future insurers.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

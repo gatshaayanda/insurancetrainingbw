@@ -1,22 +1,21 @@
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-[#C9A43E] to-[#0F264B] text-white mt-12 shadow-inner">
-     <div className="text-center text-xs text-gray-500 mb-4">
-  🌱 Powered sustainably. Our site emits only <strong>0.06g CO₂</strong> per view.{' '}
-  <a
-    href="https://www.websitecarbon.com/website/adhubmvp-vercel-app/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="underline hover:text-green-700"
-  >
-    Verified by Website Carbon
-  </a>
-</div>
+    <footer className="bg-[#D9DCE2] text-[#0F264B] mt-12 border-t border-gray-200">
       <div className="container px-4 py-6 text-center text-sm space-y-1">
-        <p>&copy; {new Date().getFullYear()} AdminHub. All rights reserved.</p>
-        <p className="opacity-90">
-          Made with precision — from intake to launch, and monthly support after.
-        </p>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+          <nav className="flex space-x-6 text-sm font-medium">
+            <a href="/" className="hover:text-[#3A8DDB] transition">Home</a>
+            <a href="/about" className="hover:text-[#3A8DDB] transition">About</a>
+            <a href="/courses" className="hover:text-[#3A8DDB] transition">Courses</a>
+            <a href="/enroll" className="hover:text-[#3A8DDB] transition">Enroll</a>
+            <a href="/contact" className="hover:text-[#3A8DDB] transition">Contact</a>
+          </nav>
+        </div>
+
+        <div className="mt-4">
+          <p className="text-xs text-gray-600">&copy; {new Date().getFullYear()} Insurance Training BW</p>
+          <p className="text-xs text-gray-600">Site by New Creations Media DDC</p>
+        </div>
       </div>
     </footer>
   );
